@@ -1,11 +1,11 @@
 import requests
 import json
 
-from config import BASE_URL
+from snookerbot.config import BASE_URL
 
-from endpoints.players import PlayerMethods
-from endpoints.matches import MatchMethods
-from endpoints.events import EventMethods
+from snookerbot.endpoints.players import PlayerMethods
+from snookerbot.endpoints.matches import MatchMethods
+from snookerbot.endpoints.events import EventMethods
 
 class SnookerOrgAPI:
 

@@ -1,4 +1,3 @@
-from dateutil import parser
 from .base import BaseModel, ObjectListModel
 
 class EventList(ObjectListModel):
@@ -54,8 +53,8 @@ class Event(BaseModel):
 
         self.ID = ID
         self.Name = Name
-        self.StartDate = parser.parse(StartDate) if StartDate else None
-        self.EndDate = parser.parse(EndDate) if EndDate else None
+        self.StartDate = StartDate
+        self.EndDate = EndDate
         self.Sponsor = Sponsor
         self.Season = Season
         self.Type = Type

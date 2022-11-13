@@ -1,4 +1,3 @@
-from curses import typeahead
 from dateutil import parser
 
 class BaseModel:
@@ -29,7 +28,7 @@ class BaseModel:
                             try:
                                 value = parser.isoparse(value)
                                 setattr(self, key, value)
-                            except (parser.ParserError, TypeError):
+                            except (parser.ParserError, TypeError, ValueError):
                                 pass
                         elif (type(value) == str and value != '') or (type(value) == int and value != 0):
                             setattr(self, key, value)

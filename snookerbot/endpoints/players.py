@@ -1,6 +1,6 @@
 from .base import APIEndpoint
 
-from models.players import Player, PlayerList
+from snookerbot.models.players import Player, PlayerList
 
 class PlayerMethods(APIEndpoint):
 

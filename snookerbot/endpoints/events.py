@@ -1,7 +1,7 @@
 from .base import APIEndpoint
 
-from models.events import Event, EventList
-from models.rounds import RoundList, Round
+from snookerbot.models.events import Event, EventList
+from snookerbot.models.rounds import RoundList, Round
 
 class EventMethods(APIEndpoint):
 

@@ -1,5 +1,6 @@
 .vscode
 test*
+tests/
 snookerbot/__pycache__/
 __pycache__/
 dist/

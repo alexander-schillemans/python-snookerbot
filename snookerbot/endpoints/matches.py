@@ -1,6 +1,6 @@
 from .base import APIEndpoint
 
-from models.matches import Match, MatchList
+from snookerbot.models.matches import Match, MatchList
 
 class MatchMethods(APIEndpoint):
 
