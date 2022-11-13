@@ -30,8 +30,15 @@ class BaseModel:
                                 setattr(self, key, value)
                             except (parser.ParserError, TypeError, ValueError):
                                 pass
-                        elif (type(value) == str and value != '') or (type(value) == int and value != 0):
-                            setattr(self, key, value)
+                        else:
+                            if type(value) == str:
+                                if value != '':
+                                    setattr(self, key, value)
+                            elif type(value) == int:
+                                if value != 0:
+                                    setattr(self, key, value)
+                            else:
+                                setattr(self, key, value)
 
                 except AttributeError:
                     pass
