@@ -1,3 +1,4 @@
+.vscode
 test*
 snookerbot/__pycache__/
 __pycache__/
