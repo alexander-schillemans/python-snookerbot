@@ -5,4 +5,4 @@ snookerbot/__pycache__/
 __pycache__/
 dist/
 Pipfile.lock
-python_snookerbot_api.egg-info/*
+python_snookerbot.egg-info/*
