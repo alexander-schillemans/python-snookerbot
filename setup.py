@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
   name = 'python-snookerbot',         
   packages=['snookerbot', 'snookerbot.models', 'snookerbot.endpoints'],
-  version = '1.2.0',
+  version = '1.3.0',
   license='GPL-3.0-or-later',
   description = 'Snookerbot',
   long_description=long_description,
@@ -17,7 +17,7 @@ setup(
   author = 'Alexander Schillemans',
   author_email = 'alexander.schillemans@hotmail.com',
   url = 'https://github.com/alexander-schillemans/python-snookerbot',
-  download_url = 'https://github.com/alexander-schillemans/python-snookerbot/archive/refs/tags/1.2.0.tar.gz',
+  download_url = 'https://github.com/alexander-schillemans/python-snookerbot/archive/refs/tags/1.3.0.tar.gz',
   keywords = ['snooker', 'snooker.org', 'bot', 'snookerbot', 'api'],
   install_requires=[
           'requests',
